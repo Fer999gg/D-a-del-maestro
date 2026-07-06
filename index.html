@@ -162,18 +162,15 @@
   .letter-wrap{
     max-width: 780px;
     width: 100%;
-    display:grid;
-    grid-template-columns: 220px 1fr;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
     gap: 3rem;
-    align-items:start;
-  }
-
-  @media (max-width: 700px){
-    .letter-wrap{ grid-template-columns: 1fr; }
   }
 
   .frame{
     width: 100%;
+    max-width: 420px;
     aspect-ratio: 4/5;
     background: repeating-linear-gradient(45deg, #ddd2ac, #ddd2ac 10px, #d5c99f 10px, #d5c99f 20px);
     border: 10px solid var(--brass);
